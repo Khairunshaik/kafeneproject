@@ -1,3 +1,14 @@
-console.log(a);  // a variable but it doesnt have value
-var a =10;
+var x;   //hoisting
+console.log(x);
+var x=10;
+
+// text();
+// var text = function (){
+//     console.log("text");
+// }
+
+text();
+function text(){
+    console.log("text");
+}
 
