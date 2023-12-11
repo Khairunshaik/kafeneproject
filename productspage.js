@@ -40,6 +40,7 @@ $(document).ready(function () {
             let td = tr[i].getElementsByTagName('td')[3];
             if (td) {
                 let textValue = myParser(td.textContent || td.innerHTML);
+                //let textValue = td.textContent || td.innerHTML;
                 if (new Date(textValue).getTime() < new Date().getTime()){
                     if(this.checked === true){
                         tr[i].style.display = "";
@@ -76,9 +77,13 @@ $(document).ready(function () {
         }
     })
 
-
     function myParser (date) {
         var arr = date.split('-');
         return arr.join(' ')
     }
+    
 });
+
+
+
+
