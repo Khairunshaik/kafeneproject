@@ -106,13 +106,12 @@ body{
     border-radius: 24px;
 }
 
+input[type=checkbox]{
+    accent-color: rgb(73, 73, 236);
+}
 
 
 
-
-
-
-/* orderspage style */
 
 .outer-wrapper{
     width: 100%;
@@ -127,15 +126,17 @@ body{
     padding: 24px 0;
 }
 .filter-wrapper{
-    width: 180px
+    width: 180px;
 }
 .filter-option{
     display: flex;
     flex-direction: column;
+    
 }
 .filter-checkbox{
     margin: 6px 0;
     cursor: pointer;
+    
 }
 .filter-checkbox input{
     margin-right: 12px;
@@ -143,6 +144,9 @@ body{
 .filter-option p{
     margin:24px 0px ;
 }
+/* #newCheckBox {
+    color: rgba(0,0,0,.8);
+} */
 .order-table{
     width: 100%;
     border-collapse: collapse;
@@ -163,7 +167,7 @@ body{
     font-size: 14px;
 }
 .secondary-text{
-    color: #8c8c8c
+    color: #8c8c8c;
 }
 .primary-text{
     color: rgba(0,0,0,.8);
