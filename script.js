@@ -10,7 +10,7 @@ $(document).ready(function () {
             username: this.username.value,
             password: this.password.value
         }
-        if (logincredential.username === logincredential.password && logincredential.username.length > 2) {
+        if (logincredential.username === logincredential.password && logincredential.username.length > 3) {
            
             $.post("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/login",logincredential,
                 function (data, textStatus, jqXHR) {
